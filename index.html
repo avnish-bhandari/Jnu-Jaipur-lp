@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MBA at JNU | Jaipur National University</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- Google Fonts: Archivo (headings) + Montserrat (body) — max weight 500 -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&family=Montserrat:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar navbar-expand-lg fixed-top jnu-navbar" id="mainNav">
+    <div class="container">
+
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="./images/jnu-logo.webp" alt="" width="200">
+      </a>
+
+      <!-- Mobile Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#academics">Academics</a></li>
+          <li class="nav-item"><a class="nav-link" href="#admissions">Admissions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#campus">Campus Life</a></li>
+          <li class="nav-item"><a class="nav-link" href="#placements">Placements</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <a href="#apply" class="btn btn-jnu">Apply Now <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+
+    <div class="container position-relative">
+      <div class="row align-items-center g-4 g-xl-5">
+
+        <!-- LEFT: Rich MBA Overview & Highlights -->
+        <div class="col-lg-7 col-xl-7 hero-content">
+
+          <span class="hero-eyebrow" data-animate>MBA AT JAIPUR NATIONAL UNIVERSITY</span>
+
+          <h1 class="hero-title" data-animate>Think Ahead<br />Lead Beyond</h1>
+
+          <p class="hero-subtitle" data-animate>
+            A transformative, future-ready MBA for tomorrow's business leaders. Master real-world management with
+            AI-integrated coursework, executive mentorship, industry-driven dual specializations, and direct placement
+            opportunities with 100+ global recruiters.
+          </p>
+
+          <!-- Key Metrics Highlight Strip -->
+          <div class="hero-metrics" data-animate>
+            <div class="hero-metric-item">
+              <span class="metric-value">₹12 LPA</span>
+              <span class="metric-label">Highest Package</span>
+            </div>
+            <div class="hero-metric-divider"></div>
+            <div class="hero-metric-item">
+              <span class="metric-value">90%+</span>
+              <span class="metric-label">Placement Track</span>
+            </div>
+            <div class="hero-metric-divider"></div>
+            <div class="hero-metric-item">
+              <span class="metric-value">100+</span>
+              <span class="metric-label">Top Recruiters</span>
+            </div>
+            <div class="hero-metric-divider"></div>
+            <div class="hero-metric-item">
+              <span class="metric-value">8+</span>
+              <span class="metric-label">Specializations</span>
+            </div>
+          </div>
+
+          <!-- Features Grid -->
+          <div class="row hero-features g-2 g-md-3" data-animate>
+            <div class="col-6 col-md-3 feature">
+              <div class="feature-icon-wrap">
+                <i class="bi bi-mortarboard-fill"></i>
+              </div>
+              <p class="feature-title">Industry-Aligned<br />Curriculum</p>
+              <span class="feature-sub">AI &amp; Analytics Ready</span>
+            </div>
+            <div class="col-6 col-md-3 feature">
+              <div class="feature-icon-wrap">
+                <i class="bi bi-people-fill"></i>
+              </div>
+              <p class="feature-title">Expert Faculty<br />&amp; Mentorship</p>
+              <span class="feature-sub">CXO Masterclasses</span>
+            </div>
+            <div class="col-6 col-md-3 feature">
+              <div class="feature-icon-wrap">
+                <i class="bi bi-bar-chart-fill"></i>
+              </div>
+              <p class="feature-title">Strong Placement<br />Support</p>
+              <span class="feature-sub">Dedicated Career Cell</span>
+            </div>
+            <div class="col-6 col-md-3 feature">
+              <div class="feature-icon-wrap">
+                <i class="bi bi-globe2"></i>
+              </div>
+              <p class="feature-title">Global Exposure<br />&amp; Immersion</p>
+              <span class="feature-sub">International Tie-ups</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT: Modern High-Converting Lead Form -->
+        <div class="col-lg-5 col-xl-5 hero-form-col" id="apply">
+          <div class="hero-form-card" id="leadFormCard" data-animate>
+            <div class="form-header">
+              <div class="form-badge-top">
+                <i class="bi bi-lightning-charge-fill"></i> Fast-Track Admission
+              </div>
+              <h3 class="form-title">Apply for MBA 2026–27</h3>
+              <p class="form-subtitle">Register for Free Academic Counselling &amp; Program Syllabus</p>
+            </div>
+
+            <!-- Form Body -->
+            <form id="heroLeadForm" class="hero-form" novalidate>
+              <div class="form-group mb-3">
+                <label for="leadName" class="form-label visually-hidden">Full Name</label>
+                <div class="input-icon-group">
+                  <span class="input-icon"><i class="bi bi-person"></i></span>
+                  <input type="text" class="form-control" id="leadName" name="fullName" placeholder="Full Name *"
+                    required />
+                </div>
+                <div class="invalid-feedback">Please enter your full name.</div>
+              </div>
+
+              <div class="form-group mb-3">
+                <label for="leadEmail" class="form-label visually-hidden">Email Address</label>
+                <div class="input-icon-group">
+                  <span class="input-icon"><i class="bi bi-envelope"></i></span>
+                  <input type="email" class="form-control" id="leadEmail" name="email" placeholder="Email Address *"
+                    required />
+                </div>
+                <div class="invalid-feedback">Please provide a valid email address.</div>
+              </div>
+
+              <div class="form-group mb-3">
+                <label for="leadPhone" class="form-label visually-hidden">Phone Number</label>
+                <div class="input-icon-group phone-group">
+                  <span class="input-icon"><i class="bi bi-telephone"></i></span>
+                  <span class="phone-prefix">+91</span>
+                  <input type="tel" class="form-control phone-input" id="leadPhone" name="phone"
+                    placeholder="10-Digit Mobile Number *" pattern="[6-9][0-9]{9}" maxlength="10" required />
+                </div>
+                <div class="invalid-feedback">Please enter a valid 10-digit mobile number.</div>
+              </div>
+
+              <div class="form-group mb-3">
+                <label for="leadSpecialization" class="form-label visually-hidden">Select Specialization</label>
+                <div class="input-icon-group">
+                  <span class="input-icon"><i class="bi bi-briefcase"></i></span>
+                  <select class="form-select" id="leadSpecialization" name="specialization" required>
+                    <option value="" selected disabled>Select MBA Specialization *</option>
+                    <option value="Marketing Management">Marketing Management</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Human Resource Management">Human Resource Management</option>
+                    <option value="Business Analytics">Business Analytics</option>
+                    <option value="Operations & Supply Chain">Operations &amp; Supply Chain</option>
+                    <option value="International Business">International Business</option>
+                    <option value="Healthcare & Hospital Management">Healthcare &amp; Hospital Management</option>
+                    <option value="Entrepreneurship">Entrepreneurship</option>
+                  </select>
+                </div>
+                <div class="invalid-feedback">Please choose your preferred specialization.</div>
+              </div>
+
+              <div class="form-group mb-3">
+                <label for="leadCity" class="form-label visually-hidden">Current City / State</label>
+                <div class="input-icon-group">
+                  <span class="input-icon"><i class="bi bi-geo-alt"></i></span>
+                  <input type="text" class="form-control" id="leadCity" name="city" placeholder="Current City / State *"
+                    required />
+                </div>
+                <div class="invalid-feedback">Please enter your city or state.</div>
+              </div>
+
+              <div class="form-check form-consent mb-3">
+                <input class="form-check-input" type="checkbox" id="leadConsent" name="consent" checked required />
+                <label class="form-check-label" for="leadConsent">
+                  I agree to receive admission updates &amp; counselling calls via Call, SMS, WhatsApp &amp; Email.
+                </label>
+                <div class="invalid-feedback">You must agree to continue.</div>
+              </div>
+
+              <button type="submit" class="btn btn-jnu btn-lead-submit w-100" id="btnLeadSubmit">
+                <span class="submit-text">Submit Enquiry &amp; Get Brochure <i
+                    class="bi bi-arrow-right ms-1"></i></span>
+                <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+              </button>
+            </form>
+
+            <!-- Success State (hidden by default) -->
+            <div class="form-success-state d-none" id="formSuccessState">
+              <div class="success-icon-box">
+                <i class="bi bi-check-circle-fill"></i>
+              </div>
+              <h4 class="success-title">Application Submitted!</h4>
+              <p class="success-desc">
+                Thank you, <strong id="successUserName">Applicant</strong>! Our Senior Admissions Counselor will contact
+                you shortly on your provided number.
+              </p>
+              <div class="success-brochure-download mb-3">
+                <button type="button" class="btn btn-jnu w-100" id="btnDownloadBrochureNow">
+                  <i class="bi bi-file-earmark-pdf-fill me-1"></i> Download MBA Brochure (PDF)
+                </button>
+              </div>
+              <button type="button" class="btn btn-link btn-sm text-muted" id="btnResetForm">
+                Submit another application
+              </button>
+            </div>
+
+            <!-- Form Trust Footer -->
+            <div class="form-trust-footer">
+              <div class="trust-pill"><i class="bi bi-shield-check"></i> 100% Privacy</div>
+              <div class="trust-pill"><i class="bi bi-patch-check"></i> UGC &amp; AICTE Approved</div>
+              <div class="trust-pill"><i class="bi bi-award"></i> Scholarships Available</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom-right motto -->
+    <div class="hero-motto">
+      <span>LEARN</span><span>GROW</span><span>LEAD</span>
+    </div>
+  </section>
+
+  <!-- ============ STATS BAR ============ -->
+  <section class="stats-bar" id="statsSection" aria-label="University statistics">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-number" data-target="75" data-suffix="+">75+</span>
+          <span class="stat-label">Acre Lush Campus</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="100" data-suffix="+">100+</span>
+          <span class="stat-label">Recruiting Partners</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="50000" data-suffix="+">50,000+</span>
+          <span class="stat-label">Alumni Network</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="25" data-suffix="+">25+</span>
+          <span class="stat-label">Years of Academic Excellence</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">NAAC A+</span>
+          <span class="stat-label">Accredited University</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY CHOOSE ============ -->
+  <section class="why-choose" id="whyChoose">
+    <div class="container">
+      <div class="text-center section-head">
+        <h2 class="section-title">Why Choose MBA at JNU?</h2>
+        <p class="section-subtitle">A program designed to build leadership, innovation, and real-world impact.</p>
+      </div>
+
+      <div class="row g-4 mt-2">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="feature-card">
+            <div class="icon-circle"><i class="bi bi-people-fill"></i></div>
+            <h3 class="card-title">Industry-Relevant Specializations</h3>
+            <p class="card-text">Curriculum aligned with current industry trends and future opportunities.</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="feature-card">
+            <div class="icon-circle"><i class="bi bi-mortarboard-fill"></i></div>
+            <h3 class="card-title">Experienced Faculty</h3>
+            <p class="card-text">Learn from highly qualified academicians and industry experts.</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="feature-card">
+            <div class="icon-circle"><i class="bi bi-buildings"></i></div>
+            <h3 class="card-title">Placement Support</h3>
+            <p class="card-text">Dedicated career support with top recruiters across sectors.</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="feature-card">
+            <div class="icon-circle"><i class="bi bi-globe2"></i></div>
+            <h3 class="card-title">Global Perspective</h3>
+            <p class="card-text">Exposure through international collaborations, exchange programs and global learning
+              opportunities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MBA SPECIALIZATIONS ============ -->
+  <section class="specializations" id="specializations">
+    <div class="container-fluid">
+      <div class="row g-0">
+
+        <!-- LEFT: image + tagline -->
+        <div class="col-lg-4 spec-left">
+          <div class="spec-left-overlay"></div>
+          <div class="spec-left-content">
+            <span class="spec-tagline">Ideas<br />Leadership<br />Impact</span>
+            <span class="spec-tagline-bar"></span>
+          </div>
+        </div>
+
+        <!-- RIGHT: solid navy panel -->
+        <div class="col-lg-8 spec-right">
+          <div class="container">
+            <div class="spec-right-inner">
+
+              <h2 class="spec-title">MBA Specializations</h2>
+              <p class="spec-sub">Choose a path that matches your passion and career goals.</p>
+
+              <div class="row g-3 spec-pills">
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <button type="button" class="spec-pill"><i class="bi bi-megaphone-fill"></i> Marketing
+                    Management</button>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <button type="button" class="spec-pill"><i class="bi bi-currency-dollar"></i> Finance</button>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <button type="button" class="spec-pill"><i class="bi bi-people-fill"></i> Human Resource
+                    Management</button>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <button type="button" class="spec-pill"><i class="bi bi-bar-chart-fill"></i> Business
+                    Analytics</button>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <button type="button" class="spec-pill"><i class="bi bi-box-seam"></i> Operations &amp; Supply
+                    Chain</button>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <button type="button" class="spec-pill"><i class="bi bi-globe2"></i> International Business</button>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <button type="button" class="spec-pill"><i class="bi bi-heart-pulse-fill"></i> Healthcare &amp;
+                    Hospital Management</button>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <button type="button" class="spec-pill"><i class="bi bi-lightbulb-fill"></i> Entrepreneurship</button>
+                </div>
+              </div>
+
+              <div class="spec-cta">
+                <a href="#specializations" class="spec-btn">Explore All Specializations <i
+                    class="bi bi-arrow-right"></i></a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LIFE AT JNU + TESTIMONIAL ============ -->
+  <section class="campus-life" id="campusLife">
+    <div class="container">
+      <div class="cl-head">
+        <h2 class="cl-title">Life at JNU</h2>
+        <p class="cl-sub">A vibrant, 75+ acre campus offering dynamic student life and holistic leadership beyond the
+          classroom.</p>
+      </div>
+
+      <div class="row g-4 g-xl-5 align-items-stretch">
+
+        <!-- LEFT: Campus Life Gallery Showcase (2x2 Immersive Grid) -->
+        <div class="col-lg-7">
+          <div class="row g-3 cl-grid">
+            <!-- Card 1: Infrastructure -->
+            <div class="col-6">
+              <div class="cl-card">
+                <img class="cl-card-img"
+                  src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=800&q=80"
+                  alt="World class infrastructure" loading="lazy">
+                <div class="cl-card-overlay"></div>
+                <div class="cl-card-content">
+                  <span class="cl-card-pill"><i class="bi bi-buildings"></i> Infrastructure</span>
+                  <div>
+                    <h4 class="cl-card-title">World-Class Campus</h4>
+                    <p class="cl-card-desc">Hi-tech smart labs, auditoriums &amp; digital central library</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Student Clubs -->
+            <div class="col-6">
+              <div class="cl-card">
+                <img class="cl-card-img"
+                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
+                  alt="Clubs and student activities" loading="lazy">
+                <div class="cl-card-overlay"></div>
+                <div class="cl-card-content">
+                  <span class="cl-card-pill"><i class="bi bi-people-fill"></i> Activities</span>
+                  <div>
+                    <h4 class="cl-card-title">Clubs &amp; Societies</h4>
+                    <p class="cl-card-desc">Leadership conclaves, debates, case study challenges</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Sports & Wellness -->
+            <div class="col-6">
+              <div class="cl-card">
+                <img class="cl-card-img"
+                  src="https://images.unsplash.com/photo-1519861531473-9200262188bf?auto=format&fit=crop&w=800&q=80"
+                  alt="Sports and wellness" loading="lazy">
+                <div class="cl-card-overlay"></div>
+                <div class="cl-card-content">
+                  <span class="cl-card-pill"><i class="bi bi-dribbble"></i> Wellness</span>
+                  <div>
+                    <h4 class="cl-card-title">Sports &amp; Fitness Arena</h4>
+                    <p class="cl-card-desc">Modern gym, indoor courts &amp; multi-sports grounds</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: Cultural Events -->
+            <div class="col-6">
+              <div class="cl-card">
+                <img class="cl-card-img"
+                  src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=800&q=80"
+                  alt="Cultural events" loading="lazy">
+                <div class="cl-card-overlay"></div>
+                <div class="cl-card-content">
+                  <span class="cl-card-pill"><i class="bi bi-music-note-beamed"></i> Festivities</span>
+                  <div>
+                    <h4 class="cl-card-title">Cultural Mega Fests</h4>
+                    <p class="cl-card-desc">Celebrity nights, annual youth festivals &amp; creative arts</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Elevated Testimonial Card -->
+        <div class="col-lg-5 d-flex">
+          <div class="cl-testimonial-wrapper w-100">
+            <div class="cl-testimonial-card shadow-sm h-100">
+              <!-- Testimonial Header -->
+              <div class="cl-testi-top">
+                <div class="cl-testi-rating">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <span class="rating-label">5.0 Alumni Rating</span>
+                </div>
+                <i class="bi bi-quote cl-quote-mark" aria-hidden="true"></i>
+              </div>
+
+              <!-- Testimonial Content Body -->
+              <div class="cl-testimonial-body" id="clBody">
+                <p class="cl-quote" id="clQuote">
+                  "MBA gave me the exposure, confidence and opportunities to grow into the
+                  professional I am today. The MBA program here is truly transformative."
+                </p>
+                <div class="cl-author">
+                  <img class="cl-avatar" id="clAvatar" src="https://i.pravatar.cc/120?img=47" alt="Ritika Sharma">
+                  <div class="cl-author-meta">
+                    <span class="cl-name" id="clName">Ritika Sharma</span>
+                    <span class="cl-role" id="clRole">MBA, Alumnus, 2023</span>
+                    <span class="cl-verified"><i class="bi bi-patch-check-fill"></i> Verified Alumnus</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial Navigation & Counter -->
+              <div class="cl-testi-footer">
+                <div class="cl-nav">
+                  <button type="button" class="cl-nav-btn" id="clPrev" aria-label="Previous testimonial"><i
+                      class="bi bi-arrow-left"></i></button>
+                  <button type="button" class="cl-nav-btn" id="clNext" aria-label="Next testimonial"><i
+                      class="bi bi-arrow-right"></i></button>
+                </div>
+                <span class="cl-trust-note"><i class="bi bi-shield-check"></i> 50,000+ Alumni Network</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PLACEMENTS ============ -->
+  <section class="placements" id="placementsSection">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+
+        <!-- LEFT: heading + logos + stats -->
+        <div class="col-lg-7">
+          <div class="pl-head">
+            <h2 class="pl-title">Placements</h2>
+            <p class="pl-sub">Our students are recruited by leading companies across industries.</p>
+          </div>
+
+          <div class="pl-logos">
+            <div class="pl-logo-card" title="Deloitte">
+              <img src="./images/logo-deloitte.svg" alt="Deloitte" class="pl-logo-img">
+            </div>
+            <div class="pl-logo-card" title="EY">
+              <img src="./images/logo-ey.svg" alt="EY" class="pl-logo-img">
+            </div>
+            <div class="pl-logo-card" title="PwC">
+              <img src="./images/logo-pwc.svg" alt="PwC" class="pl-logo-img">
+            </div>
+            <div class="pl-logo-card" title="KPMG">
+              <img src="./images/logo-kpmg.svg" alt="KPMG" class="pl-logo-img">
+            </div>
+            <div class="pl-logo-card" title="HSBC">
+              <img src="./images/logo-hsbc.svg" alt="HSBC" class="pl-logo-img">
+            </div>
+            <div class="pl-logo-card" title="ICICI Bank">
+              <img src="./images/logo-icici.svg" alt="ICICI Bank" class="pl-logo-img">
+            </div>
+          </div>
+
+          <div class="pl-stats">
+            <div class="pl-stat">
+              <span class="pl-num" data-target="100" data-suffix="+">100+</span>
+              <span class="pl-label">Recruiting Partners</span>
+            </div>
+            <div class="pl-stat">
+              <span class="pl-num" data-target="12" data-suffix=" LPA">12 LPA</span>
+              <span class="pl-label">Highest Package</span>
+            </div>
+            <div class="pl-stat">
+              <span class="pl-num" data-target="6.5" data-decimals="1" data-suffix=" LPA">6.5 LPA</span>
+              <span class="pl-label">Average Package</span>
+            </div>
+            <div class="pl-stat">
+              <span class="pl-num" data-target="90" data-suffix="%+">90%+</span>
+              <span class="pl-label">Placement Rate</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: image + gold badge -->
+        <div class="col-lg-5">
+          <div class="pl-media">
+            <img class="pl-img"
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80"
+              alt="Students collaborating on placements" loading="lazy">
+            <div class="pl-badge">
+              <span class="pl-badge-icon"><i class="bi bi-briefcase-fill"></i></span>
+              <span class="pl-badge-text">
+                <strong>Building Careers</strong>
+                <small>That Make a Difference</small>
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ADMISSION PROCESS ============ -->
+  <section class="admission-process" id="admissions">
+    <div class="container">
+      <div class="adm-header text-center">
+        <h2 class="adm-title">Simple &amp; Transparent Admission Process</h2>
+        <p class="adm-sub">Your journey to a premier management career in 4 straightforward steps.</p>
+      </div>
+
+      <div class="adm-steps-wrapper">
+        <div class="row g-4 justify-content-center">
+          <!-- Step 01 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="adm-card">
+              <div class="adm-step-bubble">
+                <span class="adm-step-num">01</span>
+              </div>
+              <div class="adm-step-icon">
+                <i class="bi bi-laptop"></i>
+              </div>
+              <h3 class="adm-card-title">Apply Online</h3>
+              <p class="adm-card-desc">Fill out the online application form with personal, academic, and contact details
+                on our admissions portal.</p>
+              <span class="adm-card-pill"><i class="bi bi-clock"></i> Takes 15 mins</span>
+            </div>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="adm-card">
+              <div class="adm-step-bubble">
+                <span class="adm-step-num">02</span>
+              </div>
+              <div class="adm-step-icon">
+                <i class="bi bi-award"></i>
+              </div>
+              <h3 class="adm-card-title">Submit Scores</h3>
+              <p class="adm-card-desc">Submit valid scores from CAT, MAT, XAT, GMAT, or register and appear for the JNU
+                Entrance Test (JNUET).</p>
+              <span class="adm-card-pill"><i class="bi bi-check2-circle"></i> National Exams</span>
+            </div>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="adm-card">
+              <div class="adm-step-bubble">
+                <span class="adm-step-num">03</span>
+              </div>
+              <div class="adm-step-icon">
+                <i class="bi bi-chat-dots"></i>
+              </div>
+              <h3 class="adm-card-title">Personal Interview</h3>
+              <p class="adm-card-desc">Shortlisted candidates participate in an interactive Personal Interview &amp;
+                profile review with our faculty panel.</p>
+              <span class="adm-card-pill"><i class="bi bi-camera-video"></i> Online / Offline</span>
+            </div>
+          </div>
+
+          <!-- Step 04 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="adm-card">
+              <div class="adm-step-bubble">
+                <span class="adm-step-num">04</span>
+              </div>
+              <div class="adm-step-icon">
+                <i class="bi bi-patch-check-fill"></i>
+              </div>
+              <h3 class="adm-card-title">Get Admission</h3>
+              <p class="adm-card-desc">Receive your provisional offer letter, complete fee verification, and embark on
+                your transformative MBA journey.</p>
+              <span class="adm-card-pill"><i class="bi bi-mortarboard"></i> Welcome to JNU</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Admission CTA -->
+      <div class="adm-cta-wrap">
+        <div class="adm-actions">
+          <a href="#apply" class="btn btn-jnu btn-lg js-scroll-to-form">Apply for MBA 2026–27 <i
+              class="bi bi-arrow-right"></i></a>
+          <a href="#brochureModal" class="btn btn-outline-jnu btn-lg js-open-brochure"><i class="bi bi-download"></i>
+            Download Brochure</a>
+        </div>
+        <p class="adm-helpline">
+          <i class="bi bi-telephone-fill"></i> Admissions Helpline: <strong>+91 11 2670 4000</strong> &bull; Mon–Sat
+          9:00 AM – 6:00 PM
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FREQUENTLY ASKED QUESTIONS ============ -->
+  <section class="faq-section" id="faqs">
+    <div class="container">
+      <div class="faq-header text-center">
+        <div class="faq-badge">
+          <i class="bi bi-question-circle-fill"></i> Clear Your Doubts
+        </div>
+        <h2 class="faq-title">Frequently Asked Questions</h2>
+        <p class="faq-sub">Find quick answers to common questions about eligibility, entrance exams, fees, scholarships,
+          and campus life.</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-9 col-xl-8">
+          <div class="faq-accordion">
+
+            <div class="af-faq-item">
+              <button type="button" class="af-faq-q" aria-expanded="false">
+                <span>What is the eligibility for MBA at JNU?</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <div class="af-faq-a">
+                <p>A bachelor's degree in any discipline with a minimum of 50% aggregate marks (45% for reserved
+                  categories) from a recognized university is required. Final year undergraduate students are also
+                  eligible to apply provisionally.</p>
+              </div>
+            </div>
+
+            <div class="af-faq-item">
+              <button type="button" class="af-faq-q" aria-expanded="false">
+                <span>Which entrance exams are accepted?</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <div class="af-faq-a">
+                <p>We accept scores from national exams including CAT, MAT, XAT, CMAT, and GMAT. Candidates can also
+                  appear for the JNU University Entrance Test (JNUET) conducted specifically for MBA admissions.</p>
+              </div>
+            </div>
+
+            <div class="af-faq-item">
+              <button type="button" class="af-faq-q" aria-expanded="false">
+                <span>Is there any reservation policy?</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <div class="af-faq-a">
+                <p>Yes, reservations and relaxation in qualifying marks are strictly provided as per the statutory norms
+                  prescribed by the Government of India for OBC, SC, ST, EWS, and PwD categories.</p>
+              </div>
+            </div>
+
+            <div class="af-faq-item">
+              <button type="button" class="af-faq-q" aria-expanded="false">
+                <span>What is the total fee for the MBA program?</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <div class="af-faq-a">
+                <p>The total program fee is approximately ₹4.5&ndash;5.5 lakh for two years, inclusive of academic,
+                  laboratory, and library charges. Merit scholarships and education loan tie-ups with leading banks are
+                  readily available.</p>
+              </div>
+            </div>
+
+            <div class="af-faq-item">
+              <button type="button" class="af-faq-q" aria-expanded="false">
+                <span>Does JNU provide hostel facilities?</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <div class="af-faq-a">
+                <p>Yes, JNU provides separate, well-furnished hostel facilities for boys and girls with hygienic mess
+                  catering, high-speed Wi-Fi, indoor recreation, and 24&times;7 security on our green, sprawling campus.
+                </p>
+              </div>
+            </div>
+
+            <div class="af-faq-item">
+              <button type="button" class="af-faq-q" aria-expanded="false">
+                <span>What specializations are offered in the MBA program?</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <div class="af-faq-a">
+                <p>JNU offers high-demand specializations in Marketing, Finance, Human Resource Management, Operations
+                  &amp; Supply Chain, Business Analytics, and International Business with industry-recognized
+                  certifications.</p>
+              </div>
+            </div>
+
+            <div class="af-faq-item">
+              <button type="button" class="af-faq-q" aria-expanded="false">
+                <span>What placement assistance does JNU offer?</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <div class="af-faq-a">
+                <p>Our dedicated Corporate Relations and Placement Cell provides 100% placement support, executive
+                  mentorship, summer internships, and campus recruitment with 100+ premier recruiters like Deloitte, EY,
+                  PwC, KPMG, and HSBC.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Bottom Contact Box -->
+          <div class="faq-bottom-card">
+            <div class="faq-bottom-info">
+              <h4 class="faq-bottom-title">Still have questions about admissions?</h4>
+              <p class="faq-bottom-desc">Our experienced admissions counselling team is here to guide you through every
+                step.</p>
+            </div>
+            <div class="faq-bottom-actions">
+              <a href="#leadFormCard" class="btn btn-jnu js-scroll-to-form"><i class="bi bi-headset"></i> Talk to an
+                Advisor</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BANNER ============ -->
+  <section class="cta-banner" id="ctaSection">
+    <div class="cta-overlay"></div>
+
+    <div class="container position-relative">
+      <div class="row g-5 align-items-center">
+
+        <!-- LEFT: heading + buttons -->
+        <div class="col-lg-7">
+          <div class="cta-content">
+            <span class="cta-eyebrow">Your Next Chapter Starts Here</span>
+            <h2 class="cta-title">Be the Leader the World Needs</h2>
+            <p class="cta-sub">Admissions Open for MBA 2026&ndash;27</p>
+
+            <div class="cta-actions">
+              <a href="#apply" class="cta-btn cta-btn-primary">Apply Now <i class="bi bi-arrow-right"></i></a>
+              <a href="#counselor" class="cta-btn cta-btn-outline">Talk to Our Counselor</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: support list -->
+        <div class="col-lg-5">
+          <ul class="cta-list">
+            <li class="cta-list-item">
+              <span class="cta-list-icon"><i class="bi bi-person-check-fill"></i></span>
+              <span>Personalised Guidance</span>
+            </li>
+            <li class="cta-list-item">
+              <span class="cta-list-icon"><i class="bi bi-file-earmark-check-fill"></i></span>
+              <span>Application Support</span>
+            </li>
+            <li class="cta-list-item">
+              <span class="cta-list-icon"><i class="bi bi-cash-coin"></i></span>
+              <span>Scholarship Assistance</span>
+            </li>
+            <li class="cta-list-item">
+              <span class="cta-list-icon"><i class="bi bi-briefcase-fill"></i></span>
+              <span>Career Counselling</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="jnu-footer" id="siteFooter">
+    <div class="container">
+
+      <!-- Top bar -->
+      <div class="footer-top">
+        <div class="row g-4 align-items-center">
+          <div class="col-12 col-lg-3 text-center text-lg-start">
+            <a class="footer-logo" href="#" aria-label="Jaipur National University">
+              <img src="./images/jnu-logo.webp" alt="Jaipur National University" class="footer-logo-img">
+            </a>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <ul class="footer-nav">
+              <li><a href="#about">About</a></li>
+              <li><a href="#academics">Academics</a></li>
+              <li><a href="#admissions">Admissions</a></li>
+              <li><a href="#placements">Placements</a></li>
+              <li><a href="#campus">Campus Life</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-lg-3 text-center text-lg-end">
+            <div class="footer-social">
+              <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+              <a href="#" aria-label="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="footer-bottom">
+        <div class="row g-3 align-items-center">
+          <div class="col-12 col-md-4 text-center text-md-start">
+            <p class="footer-copy">© 2025 Jaipur National University. All Rights Reserved.</p>
+          </div>
+          <div class="col-12 col-md-4 text-center">
+            <div class="footer-legal">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Use</a>
+              <a href="#">Sitemap</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 text-center text-md-end">
+            <div class="footer-tagline">
+              <span class="bar"></span>
+              <span>Book Today: Transform Tomorrow.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+
+</html><!-- ============ ABOUT / STATS ============ -->undefined
